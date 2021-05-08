@@ -1,0 +1,229 @@
+{% extends 'main/base.html' %}
+{% block content %}
+
+     {% include 'main/nav.html' %}
+    
+     <div class="row">
+        <div class="col s10 m5">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://thefederal.com/file/2020/12/home-quarantine-coronavirus-infection-2019ncov-covid19-pregnancy-vector-id1252318040.jpg">
+              
+            </div>
+            <div class="card-content">
+              <p>“Pregnant women should continue to manage their pregnancy using the same preventive actions they always would to stay healthy, such as washing their hands and staying away from people who are sick,”</p>
+              <br><br>
+                      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Daily CheckIn</a>
+                          <div id="modal1" class="modal">
+                            <div class="modal-content">
+                              <p>
+                                  <input type="checkbox" checked="checked" />
+                                  <span><strong>Your Daily Check-In</strong></span>
+                              </div>
+                              </p> 
+                                  <br>
+                                  
+
+
+                              <div class="col s12 m4">
+                                <div class="card horizontal"> 
+                                  <div class="card-stacked">
+                                    <div class="card-content">
+                                      <ul >
+                                        <li><h6>Remember</h6></li>
+                                        <li>* Take Pre-natal vitamin</li><br>
+                                        <li>* Start a list  of questions to ask your doctor: Testes needed,nutrition advice,how to deal with stress, etc</li><br>
+                                        <li>* Morning Sickness essentials : Ginger,Bland, Bananas, toast, rice, pretzels </li><br>
+                                      </ul>
+
+                                    </div>                                 
+                                   </div>                    
+                                 </div>   
+                              </div>
+                              <div class="col s12 m4">
+                                <div class="card horizontal"> 
+                                  <div class="card-stacked">
+                                    <div class="card-content">
+                                      <ul>
+                                        <li><h6>Meet Mary Ann</h6></li>
+                                        <li>* Ann is a nurse in delhi having 5 years of Experience</li>
+                                        <li>* Notes from Mary Ann <em>"You are doing great! Keep it up"</em> </li>
+                                        <li>* Leave a note</li>
+                                        <input type="text" placeholder="Enter a note">  
+                                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                          <i class="material-icons right">send</i>
+                                        </button>                                  
+                                      </ul>
+                                    </div>                                 
+                                   </div>                    
+                                 </div>   
+                              </div>
+                              <div class="col s12 m4">
+                                <div class="card horizontal"> 
+                                  <div class="card-stacked">
+                                    <div class="card-content">
+                                      <ul>
+                                        <Label>Upcoming Appoinment</Label>
+                                        <input type="date" value="11-May-2021">
+                                        <li><h6>Key advice for pandemic</h6></li>
+                                        <li>*Clean your hands</li>
+                                        <li>*Maintain safe distance</li>
+                                        <li>*hydrated to reduce the risk of blood clots in pregnancy </li>
+                                        
+                                      </ul>
+                                    </div>                                 
+                                   </div>                    
+                                 </div>   
+                              </div>
+
+                            <br>
+                            </div>
+                          </div>
+            </div>
+          </div>
+        
+        
+        
+        <div class="col s12 m4">
+          <div class="main">
+          <div class="card  red lighten-2">
+            <div class="card-content white-text">
+              <span class="card-title"><strong> Enter your Pregnancy month</strong></span>
+               <input type="number" id="num" placeholder="Month" max="10" min="1" >
+               <button type="reset" onclick="number()">Submit</button><br>
+               <label class="hide" type="text" id="textInput" style="color: #ffffff; padding-top: 20px; font-size: large;" ><i class="material-icons left">pregnant_woman</i>You are First Trimester</label>
+               <label class="hide" type="text" id="textInput1" style="color: #ffffff; padding-top: 20px; font-size: large;" ><i class="material-icons left">pregnant_woman</i>You are Second Trimester</label>
+               <label class="hide" type="text" id="textInput2" style="color: #ffffff; padding-top: 20px; font-size: large;" ><i class="material-icons left">pregnant_woman</i>You are Third Trimester</label>
+            </div>
+           </div>
+          </div>
+        </div>
+     
+
+         
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card red lighten-2 ">
+            <div class="mainn">
+              <div class="card-content white-text">
+               
+                <h5>Schedule Appoinment </h5>
+                
+              </div>
+              <div class="mainnn"> <input type="text" class="datepicker"  placeholder="Select date" showClearBtn="False" ></div>
+             
+              <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Doctors Availablity</option>
+                  <option value="1">Morning (10 to 12)</option>
+                  <option value="2">Afternoon (2 to 4) </option>
+                  <option value="3">Evening (6 to 8)</option>
+                </select>
+              </div>
+              <a onclick="M.toast({html: 'You appointment is successful'})" class="btn">Book</a>
+              
+            </div>
+            <br>
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+      </div>
+
+
+
+
+
+
+      <style>
+       .main button{
+        padding-right: 10px;
+        background-color: #e1dceb;
+        letter-spacing: 0px;
+        font-weight: bold;
+        color: rgb(95, 85, 85);
+        border-radius: 5px;
+        box-shadow: rgb(26, 25, 26);
+        
+       }
+       .mainn>p {
+         display: inline;
+       }
+     
+       .mainn a{
+        padding-right: 10px;
+        background-color: #e1dceb;
+        letter-spacing: 0px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(95, 85, 85);
+        margin-left: 20px;
+        border-radius: 5px;
+        box-shadow: rgb(26, 25, 26);
+       }
+        .mainn a:hover{
+          background-color: rgb(255, 215, 208) lighten-5;
+        }
+
+   
+      </style>
+
+      <script>
+        function number(){
+          month = document.getElementById('num').value;
+          if (month < 4)
+           document.getElementById('textInput').className="show";
+          else if (month >3 & month < 7)
+           document.getElementById('textInput1').className="show";
+          else if(month >6 & month <= 10)
+          {
+            document.getElementById('textInput2').className="show";
+          }
+        }
+  
+            //datepicker
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems, options);
+          });
+
+          // Or with jQuery
+
+          $(document).ready(function(){
+            $('.datepicker').datepicker();
+          });
+          
+          document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('select');
+          var instances = M.FormSelect.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function(){
+          $('select').formSelect();
+        });
+      
+        //dailycheck-in
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems, options);
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function(){
+        $('.modal').modal();
+      });
+      
+      </script>
+       
+     
+
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<br><br><br><br>
+<div class="container">
+    <div class="header">
+      <h1 class="center-align">Login</h1>
+      <div class="main">
+        <form action="">
+          <span>
+            <i></i>
+            <label>Email Address:</label>
+            <input type="email" placeholder="Email">
+          </span><br>
+          <span>
+            <i></i>
+            <label>EnterPassword</label>
+            <input  type="password" placeholder="password">
+          </span><br>
+          <button class="waves-effect waves-light btn"> <a href="index">Login</a> </button><br>
+           <span class="divy">New user?</span><a href="register">Register Here</a>
+        </form>
+      </div>
+    </div>
+</div>
+
+<style>
+  body{
+    background-image: url(https://columbiasurgery.org/sites/default/files/news_covid_pregnant.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+  }
+  .container {
+    border-radius: 25px;
+    box-shadow: 0 0 5px #333;
+    padding-bottom: 70px;
+    width: 500px;
+    height: 450px;
+  }
+  .main input{
+    padding-right: 25px;
+    padding: auto;
+    margin-right: 150px;
+    font-size: larger;
+    max-width: 270px;
+
+  }
+  .main input:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: rgb(229, 192, 238);
+}
+  .main label{
+    color: black;
+    display: inline-block;
+  }
+  .divy{
+    border-right: 50px;
+  }
+  .header
+   {
+	text-align: center;
+	padding-top: 15px;
+  }   
+  .header h1 {
+	color: rgb(19, 19, 19);
+	font-size: 55px;
+  padding-top: 20px;
+	margin-bottom: 60px;
+} 
+
+.main button {
+	padding-left: 10px;
+	background-color: #c8a7fd;
+	letter-spacing: 0px;
+  width: 65px;
+	font-weight: bold;
+	margin-bottom: 70px;
+  margin-left: 50px;
+}
+
+.main button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #bdabf8;
+}
+</style>
+
+
+{% endblock %}
+    
+        
