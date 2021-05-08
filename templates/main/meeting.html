@@ -1,0 +1,88 @@
+{% extends 'main/base.html' %}
+{% block content %}
+
+     {% include 'main/nav.html' %}
+     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+     <div class="elfsight-app-eb5a4f77-76c0-4516-83b3-5bd87a41728d"></div>
+
+     <div class="row">
+        <div class="col s10 m5">
+        <div class="card-image">
+          <img class="z-depth-3" src="https://www.houstonmethodist.org/-/media/Images/Contenthub/Article-Images/Pregnancy-and-Childbirth/Hub_COVID19DiagnosisPregnant_Article.ashx">
+        </div> 
+        </div>
+        
+        <div class="col s12 m4">
+          <div class="main">
+           <div class="card  red lighten-2">
+            <div class="card-content white-text">
+              <span class="card-title"><strong>Video call with your doctor</strong></span><br>
+              <p>Before having your call you can attach your MEDICAL REPORT for example Prescription,Scan report or Lab report</p>
+
+                  <form action="#">
+                    <div class="file-field input-field">
+                      <div class="btn">
+                        <span>File</span>
+                        <input type="file" multiple >
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                      </div>
+                    </div>
+                  </form>
+                
+                  <span class="card-title">Click here to Join the Call</span><br>
+                  <a href="video" class="waves-effect waves-light btn-large" ><i class="material-icons left">video_call</i>Join Call</a>
+
+
+            </div>
+           </div>
+          </div>
+        </div>
+      
+
+
+
+
+
+      </div>
+
+   
+
+
+
+<style>
+  .main a{
+    padding-right: 10px;
+        background-color: #e1dceb;
+        letter-spacing: 0px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(95, 85, 85);
+        padding-left: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        box-shadow: rgb(26, 25, 26);
+  }
+
+  .main a:hover{
+    background-color: rgb(255, 215, 208) lighten-5;
+  }
+ img{
+   height: 450px;
+   width: 550px;
+   display: inline;
+   margin-right: 25px;
+ }
+ .main{
+   position: relative;
+   width: 500px;
+   margin-left: 70px;
+ }
+
+
+</style>
+
+
+
+{% endblock %}
