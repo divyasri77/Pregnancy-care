@@ -23,17 +23,29 @@ A Web App for Virtual Consultation and treatment in this Pandemic situation
 - WebRTC
 - Socket.IO
 
-# How to fork and run Pregnancy Care on your local machine 💻:
+# How to get started 💻:  
+## Prerequisites  
+* Download and install [Python](https://www.python.org/downloads/)  
+* Download and install [Git](https://git-scm.com/downloads)
+* Install virtualenv   
+  `$ pip3 install virtualenv`
 
-- Download and install Python
-- Download and install Git.
-- Fork the Repository.
-- Clone the repository to your local machine `$ git clone https://github.com/<your-github-username>/PregnancyCare.git`
-- Change directory to PregnancyCare `$ cd PregnancyCare`
-- Install virtualenv `$ pip3 install virtualenv`
-- Create a virtual environment `$ virtualenv env -p python`
-- Activate the env: `$ source env/bin/activate` (for linux) `> env\Scripts\activate` (for Windows PowerShell)
-- Install the requirements: `$ pip install -r requirements.txt`
-- Run the server `$ python manage.py runserver`
-- Open any web browser and then paste the server address to see the webpage working on your local machine
+## Running Pregnancy-care
+* Fork the Repository
+* Clone the repository to your local machine and change directory to PregnancyCare  
+```
+  $ git clone https://github.com/<your-github-username>/PregnancyCare.git  
+  $ cd PregnancyCare  
+```
+* Create a virtual environment and activate it  
+```
+  $ virtualenv env -p python
+  $ source env/bin/activate (for linux) 
+  > env\Scripts\activate (for Windows PowerShell)
+```  
+* Install the requirements  
+` $ pip install -r requirements.txt`  
+* Run the server  
+` $ python manage.py runserver`  
+* Open any web browser and then paste the server address to see the webpage working on your local machine
 
